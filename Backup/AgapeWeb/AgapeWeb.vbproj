@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{DC5D409F-B24A-4A35-AAF8-20E4ABFFD5E6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AgapeWeb</RootNamespace>
+    <AssemblyName>AgapeWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>AgapeWeb.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>AgapeWeb.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cliente.aspx" />
+    <Content Include="Empleado.aspx" />
+    <Content Include="Equipo.aspx" />
+    <Content Include="img\logo ss.png" />
+    <Content Include="img\logo_irm.png" />
+    <Content Include="Informe_Entrada_detalle.aspx" />
+    <Content Include="Informe_entrada_proveedor.aspx" />
+    <Content Include="Informe_entrada_resumen.aspx" />
+    <Content Include="Informe_mantenimiento_preventivo.aspx" />
+    <Content Include="Informe_recuencia_cliente.aspx" />
+    <Content Include="Informe_reintegro_detalle.aspx" />
+    <Content Include="Informe_reintegro_empleado.aspx" />
+    <Content Include="Informe_reintegro_resumen.aspx" />
+    <Content Include="Informe_salida_detalle.aspx" />
+    <Content Include="Informe_salida_empleado.aspx" />
+    <Content Include="Informe_salida_resumen.aspx" />
+    <Content Include="login-box.css" />
+    <Content Include="Login.aspx" />
+    <Content Include="Material.aspx" />
+    <Content Include="Material_entrada.aspx" />
+    <Content Include="Material_reintegro.aspx" />
+    <Content Include="Solicitud_servicio.aspx" />
+    <Content Include="Orden_empleado.aspx" />
+    <Content Include="Principal.aspx" />
+    <Content Include="Programacion_frecuencia.aspx" />
+    <Content Include="Proveedor.aspx" />
+    <Content Include="Material_salida.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cliente.aspx.designer.vb">
+      <DependentUpon>Cliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.aspx.vb">
+      <DependentUpon>Cliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConexionDB.vb" />
+    <Compile Include="Empleado.aspx.designer.vb">
+      <DependentUpon>Empleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado.aspx.vb">
+      <DependentUpon>Empleado.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Equipo.aspx.designer.vb">
+      <DependentUpon>Equipo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipo.aspx.vb">
+      <DependentUpon>Equipo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Informe_Entrada_detalle.aspx.designer.vb">
+      <DependentUpon>Informe_Entrada_detalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Informe_Entrada_detalle.aspx.vb">
+      <DependentUpon>Informe_Entrada_detalle.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Informe_entrada_proveedor.aspx.designer.vb">
+      <DependentUpon>Informe_entrada_proveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Informe_entrada_proveedor.aspx.vb">
+      <DependentUpon>Informe_entrada_proveedor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Informe_entrada_resumen.aspx.designer.vb">
+      <DependentUpon>Informe_entrada_resumen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Informe_entrada_resumen.aspx.vb">
+      <DependentUpon>Informe_entrada_resumen.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Informe_mantenimiento_preventivo.aspx.designer.vb">
+      <DependentUpon>Informe_mantenimiento_preventivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Informe_mantenimiento_preventivo.aspx.vb">
+      <DependentUpon>Informe_mantenimiento_preventivo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Informe_recuencia_cliente.aspx.designer.vb">
+      <DependentUpon>Informe_recuencia_cliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Informe_recuencia_cliente.aspx.vb">
+      <DependentUpon>Informe_recuencia_cliente.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Informe_reintegro_detalle.aspx.designer.vb">
+      <DependentUpon>Informe_reintegro_detalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Informe_reintegro_detalle.aspx.vb">
+      <DependentUpon>Informe_reintegro_detalle.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Informe_reintegro_empleado.aspx.designer.vb">
+      <DependentUpon>Informe_reintegro_empleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Informe_reintegro_empleado.aspx.vb">
+      <DependentUpon>Informe_reintegro_empleado.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Informe_reintegro_resumen.aspx.designer.vb">
+      <DependentUpon>Informe_reintegro_resumen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Informe_reintegro_resumen.aspx.vb">
+      <DependentUpon>Informe_reintegro_resumen.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Informe_salida_detalle.aspx.designer.vb">
+      <DependentUpon>Informe_salida_detalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Informe_salida_detalle.aspx.vb">
+      <DependentUpon>Informe_salida_detalle.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Informe_salida_empleado.aspx.designer.vb">
+      <DependentUpon>Informe_salida_empleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Informe_salida_empleado.aspx.vb">
+      <DependentUpon>Informe_salida_empleado.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Informe_salida_resumen.aspx.designer.vb">
+      <DependentUpon>Informe_salida_resumen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Informe_salida_resumen.aspx.vb">
+      <DependentUpon>Informe_salida_resumen.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Material.aspx.designer.vb">
+      <DependentUpon>Material.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Material.aspx.vb">
+      <DependentUpon>Material.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Material_entrada.aspx.designer.vb">
+      <DependentUpon>Material_entrada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Material_entrada.aspx.vb">
+      <DependentUpon>Material_entrada.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Material_reintegro.aspx.designer.vb">
+      <DependentUpon>Material_reintegro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Material_reintegro.aspx.vb">
+      <DependentUpon>Material_reintegro.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Solicitud_servicio.aspx.designer.vb">
+      <DependentUpon>Solicitud_servicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitud_servicio.aspx.vb">
+      <DependentUpon>Solicitud_servicio.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Orden_empleado.aspx.designer.vb">
+      <DependentUpon>Orden_empleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Orden_empleado.aspx.vb">
+      <DependentUpon>Orden_empleado.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Principal.aspx.designer.vb">
+      <DependentUpon>Principal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.aspx.vb">
+      <DependentUpon>Principal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Programacion_frecuencia.aspx.designer.vb">
+      <DependentUpon>Programacion_frecuencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programacion_frecuencia.aspx.vb">
+      <DependentUpon>Programacion_frecuencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Proveedor.aspx.designer.vb">
+      <DependentUpon>Proveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedor.aspx.vb">
+      <DependentUpon>Proveedor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Material_salida.aspx.designer.vb">
+      <DependentUpon>Material_salida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Material_salida.aspx.vb">
+      <DependentUpon>Material_salida.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63825</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
